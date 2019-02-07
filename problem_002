@@ -1,13 +1,25 @@
-# 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
-#
-# What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+my_fib = list ()
+my_fib.append(1)
+my_fib.append(2)
 
-i = 20
+for n in range(1,100):
+    a = my_fib[n] + my_fib[n-1]
+    if a < 4000000:
+        my_fib.append(a)
+    else:
+        break
 
-for a in range (20, 1000000000):
-    while a % i == 0:
-        i = i - 1
-        if i == 1:
-            print (a)
-            break
-    i = 20
+my_evens = list()
+
+l = len(my_fib)
+
+for n in range(0,l):
+    if my_fib[n] % 2 == 0:
+        my_evens.append(my_fib[n])
+
+
+print (my_fib)
+print ()
+print (my_evens)
+print ()
+print (sum(my_evens))
