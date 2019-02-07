@@ -5,7 +5,7 @@
 palindroms = list ()
 
 for a in range(100, 1000):
-    for b in range (100,1000):
+    for b in range (100, 1000):
 
         pal = str(a * b)
 
