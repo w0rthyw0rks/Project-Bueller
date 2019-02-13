@@ -9,6 +9,9 @@
 #
 # Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
+import time
+start_time = time.time()
+
 numbers = []
 squares = []
 x = 100
@@ -26,3 +29,5 @@ print(sum(squares))
 print(sum(numbers)**2)
 
 print(sum(numbers)**2 - sum(squares))
+
+print("--- %s seconds ---" % (time.time() - start_time))
