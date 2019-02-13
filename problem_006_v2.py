@@ -12,3 +12,4 @@ print(sum**2 - sumSquares)
 print("--- %s seconds ---" % (time.time() - start_time))
 
 # --- 0.00011205673217773438 seconds ---
+# 3.3x faster than my original solution
