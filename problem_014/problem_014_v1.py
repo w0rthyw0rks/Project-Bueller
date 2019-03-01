@@ -38,3 +38,4 @@ print(chains.index(maxCount)+2)
 print("--- %s seconds ---" % (time.time() - start_time))
 
 # runs in 73 seconds 
+
