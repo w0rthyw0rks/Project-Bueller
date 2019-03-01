@@ -1,8 +1,8 @@
 # runs in 73 seconds
-# runs in 53 seconds
+# runs in 53 seconds (start at 500k not at 1)
 # runs in 32 seconds
 # runs in 28 seconds
-# runs in 20 seconds
+# runs in 20 seconds ( 2 + (3*n+1)/2 )
 
 import time
 start_time = time.time()
